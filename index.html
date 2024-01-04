@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../Porfolio/Static/style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+               <ul>
+                   <li><a href="#">Trang Chủ</a></li>
+                   <li><a href="#">Về cá nhân tôi</a></li>
+                   <li><a></a></li>
+                   <li><a></a></li>
+                   <li><a></a></li>
+                   <li><a href="#">Liên Hệ</a></li>
+                   <i class="fas fa-times"></i>
+               </ul>
+               <i class="fa-solid fa-bars"></i>
+           </nav>
+
+           <div class="header-text">
+                <p>Thực Tập Sinh Trí Tuệ Nhân Tạo</p>
+                <h1>Xin Chào, Tôi Là <span><br>Bùi Xuân Lộc</h1></span>
+           </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Porfolio/Static/Pic/123.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        Về Bản Thân:
+                    </h1>
+                    <p>
+                        Xin chào, tôi là Bùi Xuân Lộc,bước sang năm 2024 thì tôi đã 21 tuổi. \
+                        Tôi hiện đang là sinh viên năm 3 ngành trí tuệ nhân tạo tại trường đại học Công Thương (HUIT). 
+                        Tôi rất đam mê về trí tuệ nhân tạo và mong muốn được học hỏi và phát triển kỹ năng của mình trong lĩnh vực này. Tôi có kinh nghiệm làm việc trong các dự án liên quan đến trí tuệ nhân tạo, như là người sáng lập dự án ứng dụng kết nối mentor và mentee, 
+                        đang thực hiện triển khai có ứng dụng trí tuệ nhân tạo để tái tạo hỉnh ảnh/video 2d thành 3d. 
+                        Dự án của tôi đã đạt được giải khuyến khích trong cuộc thi khởi nghiệp. 
+                        Tôi cũng có kinh nghiệm quản lý dự án trong 6 tháng, trong đó tôi phụ trách lên kế hoạch, 
+                        phân công nhiệm vụ, và theo dõi tiến độ. 
+                        Tôi có khả năng viết chương trình bằng các ngôn ngữ C/C++, C# và Python. 
+                        Tôi luôn sẵn sàng học hỏi những kiến thức và kỹ năng mới, cũng như làm việc nhóm và giao tiếp hiệu quả. 
+                        Tôi hy vọng được trở thành một phần của đội ngũ thực tập sinh của công ty bạn và đóng góp vào sự phát triển của công ty.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('trình độ')">Trình độ</p>
+                        <p class="tab-links" onclick="opentab('kỹ năng')">Kỹ Năng</p>
+                        <p class="tab-links" onclick="opentab('kinh nghiệm')">Kinh Nghiệm</p>                        
+                    </div>
+
+                    <div class="tab-content active-tab" id="trình độ">
+                        <ul>
+                            <li>
+                                <span>Sinh viên năm ba ngành trí tuệ nhân tạo</span>
+                                Trường đại học Công Thương thành phố Hồ Chí Minh <a href="https://huit.edu.vn/">(HUIT)</a>
+                            </li>
+                            <li>
+                                <span>Sáng lập dự án SENPY - FIND YOUR MENTOR</span>
+                            Xuất sắc đạt giải khuyến khích cuộc thi <a href="https://huit.edu.vn/dam-bao-chat-luong/vong-chung-ket-cuoc-thi-quotsinh-vien-cong-thuong-voi-y-tuong-khoi-nghiepquot-lan-iv-nam-2023">Sinh viên Công Thương với ý tưởng khởi nghiệp</a> 
+                            </li>
+                            <li>
+                                <span>GPA:</span>
+                            Ở mức trung bình: 2.37/4.0
+                            </li>
+                        </ul> 
+                    </div>
+
+                    <div class="tab-content" id="kỹ năng">
+                        <ul>
+                            <li>
+                                <span>Kỹ năng lên kế hoạch</span><br>
+                                Lên kế hoạch cho nhóm làm việc, thao luận hoạt động nhóm theo phương pháp Agile
+                            </li>
+                            <li>
+                                <span>Kỹ năng làm việc nhóm</span>
+                            </li>
+                            <li>
+                                <span>Kỹ năng ngoại ngữ</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="kinh nghiệm">
+                        <ul>
+                            <li>
+                                <span>6/2023 - hiện tại</span><br>
+                                Quản lý dự án SENPY - FIND YOUR MENTOR và đã xuất sắc vào vòng bán kết cuộc thi <span><a href="https://ntt.edu.vn/60-doi-thi-tranh-tai-tai-ban-ket-sinh-vien-voi-y-tuong-khoi-nghiep-nam-2023/">"Sinh viên với ý tưởng khởi nghiệp sáng tạo 2023"</a></span>
+                                và vào bán kết cuộc thi <span>Cuộc thi DigiTrans Smart City – Sáng kiến xây dựng thành phố thông minh năm 2023</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">Những gì tôi đang tìm hiểu</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../Porfolio/Static/Pic/Work1.jpg">
+                    <div class="layer">
+                        <h3>Tìm hiểu phương pháp sử dụng trí tuệ nhân tạo phân tích, dự báo tình hình tài chính doanh nghiệp</h3>
+                        <p>Dùng mô hình Random Forest Regressor kết hợp với thuật toán Decision Tree để xây dựng nhiều cây quyết định và kết hợp thuật toán PCA (Principal Component Analysis) để giảm chiều dữ liệu có thể sử dụng cải thiện hiệu suất RFR</p>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="../Porfolio/Static/Pic/work2.jpg">
+                    <div class="layer">
+                        <h3>Tìm hiểu phương pháp sử dụng trí tuệ nhân tạo phân tích, dự báo tình hình tài chính doanh nghiệp</h3>
+                        <p>Sử dụng thuật toán PiFuHD của Facebook Research phát triển, mô hình Neural Radiance Fields (NeRF) của NVIDIA kết hợp Blender </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Liên Hệ Cho Tôi</h1>
+                    <P> <i class="fas fa-paper-plane"></i> Email: <a href="mailto:bloc907@gmail.com">bloc907@gmail.com</a> </P>
+                    <p> <i class="fas fa-phone-square-alt"></i>Số điện thoại: <a href="tel:+84582048097">0582048097</a></p>
+                    <a href="../Porfolio/Static/Pic/Ứng tuyển vị trí AI.pdf" download><button class='glowing-btn'><span class='glowing-txt'>T<span class='faulty-letter'>Ả</span>I CV</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Porfolio/Static/script.js"></script>
+</body>
+</html>
