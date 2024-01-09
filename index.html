@@ -29,6 +29,7 @@
         </div>
     </div>
 
+
     <div id="about">
         <div class="container">
             <div class="row">
@@ -166,15 +167,26 @@
 
     <div id="contact">
         <div class="container">
+            <h1 class="sub-title">Liên Hệ Cho Tôi</h1>
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Liên Hệ Cho Tôi</h1>
                     <P> <i class="fas fa-paper-plane"></i> Email: <a href="mailto:bloc907@gmail.com">bloc907@gmail.com</a> </P>
                     <p> <i class="fas fa-phone-square-alt"></i>Số điện thoại: <a href="tel:+84582048097">0582048097</a></p>
                     <a href="./Static/Pic/Ứng tuyển vị trí AI.pdf" download><button class='glowing-btn'><span class='glowing-txt'>T<span class='faulty-letter'>Ả</span>I CV</span></button></a>
                 </div>
+                <form class="fr" action="">
+                    <label class="fr__label" for="face-rating">Bạn cảm thấy như thế nào?</label>
+                    <div class="fr__face" role="img" aria-label="Straight face">
+                        <div class="fr__face-right-eye" data-right></div>
+                        <div class="fr__face-left-eye" data-left></div>
+                        <div class="fr__face-mouth-lower" data-mouth-lower></div>
+                        <div class="fr__face-mouth-upper" data-mouth-upper></div>
+                    </div>
+                    <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="5" step="0.1">
+                </form>
             </div>
         </div>
+
     </div>
     <script src="./Static/script.js"></script>
 </body>
