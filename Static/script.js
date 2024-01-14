@@ -96,3 +96,32 @@ class FaceRating {
 		this.face?.setAttribute("aria-label",faces[faceIndex]);
 	}
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+	const cursor = document.getElementById("cursor");
+  
+	document.addEventListener("mousemove", function (e) {
+	  const x = e.clientX;
+	  const y = e.clientY;
+  
+	  cursor.style.transform = `translate(${x}px, ${y}px)`;
+
+	  const trail = document.createElement("div");
+	  trail.className = "cursor-trail";
+	  trail.style.left = x + "px";
+	  trail.style.top = y + "px";
+  
+	  document.body.appendChild(trail);
+  
+	  setTimeout(() => {
+		trail.remove();
+	  }, 500);
+	});
+  });
+
+  
+  document.addEventListener("scroll", function () {
+    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    customScrollbar.style.opacity = scrollPercentage > 5 ? 1 : 0;
+});
+  
