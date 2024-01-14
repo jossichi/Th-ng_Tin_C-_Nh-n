@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
-
+@import url("https://fonts.googleapis.com/css?family=Nunito|Sastify");
 :root {
     --glow-color: hsl(186 100% 69%);
     --bg: #2C2C2C; 
@@ -13,6 +13,7 @@
 	--primary: hsl(var(--hue),90%,55%);
 	--trans-dur: 0.3s;
 	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+    --popover-height:36px;
 }
 *{
     margin: 0;
@@ -25,9 +26,7 @@ body{
     background-color: #080808;
     color: #fff;
 }
-p{
-	font-size: 15px;
-}
+
 #header{
     width: 100%;
     height: 100vh;
@@ -173,6 +172,95 @@ nav ul li a:hover::after{
 
 .profile:hover li:nth-child(2) a{
     transition-delay: .2s;
+}
+
+.popover {
+    position: relative;
+    height: var(--popover-height); width: 60px;
+    text-align: center;
+    right: 0;
+}
+
+.popover > img{
+    width: var(--popover-height);
+    height: var(--popover-height);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.popover:hover >img{
+    opacity: 0.65;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 64px;
+    width: 260px;
+    padding: 16px;
+    translate: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 6px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.3s;
+}
+
+.menu::after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -5px;
+    height: 10px;
+    rotate: 45deg;
+    background: inherit;
+}
+.popover:hover .menu{
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
+}
+
+.menu header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.menu h2{
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+.menu h3{
+    margin: 0;
+    font-size: 11px;
+    color: #000;
+}
+.menu header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.images{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.images::-webkit-scrollbar{
+    display: none;
+}
+
+.images img{
+    scroll-snap-align: start;
+    width: 108px;
+    min-width: 108px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 #about{
